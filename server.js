@@ -12,6 +12,18 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
+app.get('/firstPage',function(req,res){
+    res.send('First page requested and will be served');
+    }
+);
+app.get('/secondPage',function(req,res){
+    res.send('Second page requested and will be served');
+    }
+);
+/*app.get('/firstPage',function(req,res){
+    res.send('First page requested and will be served');
+    }
+); */
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
