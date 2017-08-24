@@ -30,15 +30,18 @@ app.get('/ui/madi.jpg', function (req, res) {
 app.get('/ui/em.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'em.jpg'));
 });
-app.get('/ui/circle.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'circle.jpg'));
-});
 app.get('/ui/hp.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'hp.jpg'));
 });
 app.get('/ui/perks.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'perks.jpg'));
 });
+
+app.get('/ui/circle.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'circle.jpg'));
+});
+
+
 app.get('/ui/noah.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'noah.jpg'));
 });
