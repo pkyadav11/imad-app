@@ -12,11 +12,11 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-app.get('/firstPage',function(req,res){
+app.get('/ui/firstPage',function(req,res){
   res.sendFile(path.join(__dirname, 'ui', 'firstPage.html'));
   });
 
-app.get('/secondPage',function(req,res){
+app.get('/ui/secondPage',function(req,res){
   res.sendFile(path.join(__dirname, 'ui', 'secondPage.html'));
   });
 /*app.get('/firstPage',function(req,res){
